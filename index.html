@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="my-id">Bonjour</p>
+    <input id="my-input" type="text"/>
+  </body>
+  <style>
+    body {
+      color: pink;
+    }
+  </style>
+  <!-- <script>
+    console.log("hello world");
+
+    const TEXTE =
+      "A knave; a rascal; an eater of broken meats; a base, proud, shallow, beggarly, three-suited, hundred-pound, filthy, worsted-stocking knave; a lily-livered, action-taking knave, a whoreson, glass-gazing, super-serviceable finical rogue; one-trunk-inheriting slave; one that wouldst be a bawd, in way of good service, and art nothing but the composition of a knave, beggar, coward, pandar";
+
+    let compteur = 0;
+
+    for (let i = 0; i < 0; i = i + 1) {
+      console.log("Boucle for");
+      let character = TEXTE[i];
+
+      let isE = character === "e";
+      if (isE == true) {
+        compteur = compteur + 1;
+      }
+    }
+
+    if (compteur > 50) {
+      let message = "Bravo !!";
+      console.log(message);
+    }
+
+    // console.log(message)
+    console.log(compteur);
+  </script>
+
+  <script>
+    const today = new Date();
+
+    console.log(today.getHours() + "h" + today.getMinutes());
+  </script> -->
+
+  <script>
+    const months = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+    const seasons = {
+      winter: { months: [0, 1, 2], label: "Hiver", message: "froid" },
+      spring: [3, 4, 5],
+    };
+
+    function monthNameToNumber(monthName) {
+      const months = ["jan", "fev"];
+
+      return months.indexOf(monthName);
+    }
+
+    function whatSeasonIsIt(month) {
+      //   const seasonKeys = Object.keys(seasons);
+      //   console.log(seasonKeys);
+      //   for (let i = 0; i < seasonKeys.length; i = i + 1) {
+      //     if (seasons[seasonKeys[i]].months.includes(month)) {
+      //       return seasons[seasonKeys[i]].label;
+      //     }
+      //   }
+
+      //   if (seasons.winter.months.includes(month)) {
+      //     return seasons.winter.label;
+      //   }
+
+      if (month >= 0 && month < 3) {
+        return "hiver";
+      } else if (month >= 3 && month < 6) {
+        return "printemps";
+      } else if (month >= 6 && month < 9) {
+        return "été";
+      } else if (month >= 9 && month < 12) {
+        return "automne";
+      }
+    }
+
+    console.log(whatSeasonIsIt(0));
+    console.log(whatSeasonIsIt(3));
+    console.log(whatSeasonIsIt(6));
+    console.log(whatSeasonIsIt(11));
+  </script>
+</html>
